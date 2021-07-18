@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sources":["../src/media-upload.tsx"],"sourcesContent":["import React from 'react'\n\nexport const MediaUploader: React.FC = () => {\n  return <div>Hello</div>\n}\n"],"names":["React"],"mappings":";;;;;;;;;;IAEa,aAAa,GAAa;IACrC,OAAOA,6DAAgB,CAAA;AACzB;;;;"}
