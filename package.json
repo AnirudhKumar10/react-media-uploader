@@ -2,13 +2,14 @@
   "name": "react-media-uploader",
   "version": "0.0.0",
   "description": "React Media Uploader",
-  "main": "build/index.js",
-  "module": "build/index.es.js",
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.esm.js",
   "files": [
     "build"
   ],
   "scripts": {
     "lint": "eslint 'src/**/*.{tsx, ts}'",
+    "prebuild": "rimraf build",
     "build": "rollup -c",
     "prepare": "husky install"
   },

@@ -19,6 +19,11 @@ export default {
       format: 'esm',
       sourcemap: true,
     },
+    {
+      file: 'build/umd/index.umd.js',
+      format: 'umd',
+      sourcemap: true,
+    },
   ],
   plugins: [
     peerDepsExternal(),
