@@ -3,6 +3,7 @@ import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import typescript from 'rollup-plugin-typescript2'
 import postcss from 'rollup-plugin-postcss'
+import copy from 'rollup-plugin-copy'
 
 const packageJson = require('./package.json')
 
@@ -20,6 +21,7 @@ export default {
       sourcemap: true,
     },
     {
+      name: 'react-media-uploader',
       file: 'build/umd/index.umd.js',
       format: 'umd',
       sourcemap: true,
@@ -31,5 +33,13 @@ export default {
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
     postcss(),
+    copy({
+      targets: [
+        {
+          src: 'src/assets',
+          dest: 'build',
+        },
+      ],
+    }),
   ],
 }

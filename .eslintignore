@@ -2,3 +2,4 @@ node_modules
 build
 rollup.config.js
 commitlint.config.js
+example
