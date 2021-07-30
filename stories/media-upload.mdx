@@ -1,0 +1,46 @@
+import { Story, Props, Preview } from '@storybook/addon-docs'
+import { ReactMediaUploader } from '../src'
+
+# React Media Uploader
+
+## Intro
+
+React Media Uploader Component allow user to upload media as `input[type=file]` element
+with additional features such as drag and drop and file type, file count, file type
+validations and api calls.
+
+It has an already defined attrative style and with ability to customization.
+
+We can use this inside a form and field and also as an independent component.
+
+<Story id="react-media-uploader--intro" />
+
+## Props Playground
+
+<Preview withToolbar>
+  <Story id="react-media-uploader--prop-playground" />
+</Preview>
+
+## Props
+
+`ReactMediaComponent` takes all the props mentioned below in the table.
+
+<Props of={ReactMediaUploader} />
+
+## Controlled Component
+
+Here is demonstrated the use the component in controlled mode. Use the `state` & `onStateChange`
+prop to access to the state.
+
+<Preview withToolbar>
+  <Story id="react-media-uploader--controlled-component" />
+</Preview>
+
+## Uncontrolled Component
+
+This example demonstrate the use the component in un-controlled mode. Use the ref prop to access to
+the state.
+
+<Preview withToolbar>
+  <Story id="react-media-uploader--uncontrolled-component" />
+</Preview>
