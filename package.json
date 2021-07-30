@@ -1,6 +1,6 @@
 {
   "name": "react-media-uploader",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "React Media Uploader",
   "main": "build/cjs/index.js",
   "module": "build/esm/index.esm.js",
@@ -43,6 +43,7 @@
     "@commitlint/config-conventional": "^12.1.4",
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
+    "@storybook/addon-a11y": "^6.3.6",
     "@storybook/addon-actions": "^6.3.5",
     "@storybook/addon-docs": "^6.3.6",
     "@storybook/react": "^6.3.5",
@@ -68,7 +69,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-typescript2": "^0.30.0",
-    "typescript": "^4.3.5",
-    "@storybook/addon-a11y": "^6.3.6"
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
   }
 }
